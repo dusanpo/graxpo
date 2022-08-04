@@ -1,2 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&family=Roboto:ital,wght@0,100;1,100&display=swap");
+@import "./abstracts/variables";
 
+.navbar {
+  background: $nav-bg-color;
+  padding: 50px;
 
+  h3 {
+    color: $logo-color;
+    font-family: "Leckerli One";
+  }
+
+  .nav-item {
+    font-size: 13px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+.title-section {
+  position: relative;
+  background: $nav-bg-color;
+  height: 600px;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 500px;
+    text-transform: uppercase;
+
+    h1 {
+      letter-spacing: 2px;
+      color: $headline-text;
+    }
+
+    p {
+      letter-spacing: 5px;
+      color: $subheadline-text;
+    }
+  }
+
+  .headphones {
+    position: absolute;
+    top: 18px;
+    left: -10px;
+  }
+  .sunglasses {
+    position: absolute;
+    top: 352px;
+    left: 350px;
+  }
+  .pencil1 {
+    position: absolute;
+    top: 544px;
+    left: 192px;
+  }
+  .pencil2 {
+    position: absolute;
+    top: 512px;
+    left: 160px;
+  }
+  .cork {
+    position: absolute;
+    top: 125px;
+    right: 125px;
+  }
+  .glass {
+    position: absolute;
+    top: 120px;
+    right: 115px;
+  }
+  .pen-holder {
+    position: absolute;
+    top: 288px;
+    right: 80px;
+  }
+  .mouse {
+    position: absolute;
+    top: 410px;
+    right: 280px;
+  }
+  .icon-scroll {
+    text-align: center;
+  }
+  .scroll-text {
+    text-align: center;
+    text-transform: uppercase;
+    color: $logo-color;
+    font-size: 12px;
+    padding-top: 7px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
