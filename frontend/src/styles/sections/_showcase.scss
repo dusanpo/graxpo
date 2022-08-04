@@ -1,0 +1,77 @@
+.title-section {
+  position: relative;
+  background: $nav-bg-color;
+  height: 600px;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 500px;
+    text-transform: uppercase;
+
+    h1 {
+      letter-spacing: 2px;
+      color: $headline-text;
+    }
+
+    p {
+      letter-spacing: 5px;
+      color: $subheadline-text;
+    }
+  }
+
+  .headphones {
+    position: absolute;
+    top: 1rem;
+    left: 0.5rem;
+  }
+  .sunglasses {
+    position: absolute;
+    top: 22rem;
+    left: 22rem;
+  }
+  .pencil1 {
+    position: absolute;
+    top: 34rem;
+    left: 12rem;
+  }
+  .pencil2 {
+    position: absolute;
+    top: 32rem;
+    left: 10rem;
+  }
+  .cork {
+    position: absolute;
+    top: 7.8rem;
+    right: 7.8rem;
+  }
+  .glass {
+    position: absolute;
+    top: 6.8rem;
+    right: 7.2rem;
+  }
+  .pen-holder {
+    position: absolute;
+    top: 18rem;
+    right: 5rem;
+  }
+  .mouse {
+    position: absolute;
+    top: 25rem;
+    right: 18rem;
+  }
+  .icon-scroll {
+    text-align: center;
+  }
+  .scroll-text {
+    text-align: center;
+    text-transform: uppercase;
+    color: $logo-color;
+    font-size: 12px;
+    padding-top: 7px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}

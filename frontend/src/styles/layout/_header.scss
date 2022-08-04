@@ -1,0 +1,15 @@
+.navbar {
+  background: $nav-bg-color;
+  padding: 50px;
+
+  h3 {
+    color: $logo-color;
+    font-family: "Leckerli One", cursive;
+  }
+
+  .nav-item {
+    font-size: 13px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+  }
+}
