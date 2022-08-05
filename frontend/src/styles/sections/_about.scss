@@ -1,0 +1,19 @@
+ @import "../components/buttons";
+
+.about-section {
+  h3 {
+    text-transform: uppercase;
+    color: #353b46;
+    letter-spacing: 2px;
+  }
+  .line-under-right {
+    border-bottom: 3px solid $uderline-color;
+    width: 3.5rem;
+  }
+  img {
+    height: 90%;
+  }
+  .about-button{
+    @include regular-button($btn-text-color, $logo-color);
+  }
+}
