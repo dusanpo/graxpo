@@ -3,11 +3,8 @@
   background: $nav-bg-color;
   height: 38rem;
 
-  .title {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
+  .title-wrap {
+   
     height: 30rem;
     text-transform: uppercase;
 
@@ -20,6 +17,10 @@
       letter-spacing: 5px;
       color: $subheadline-text;
     }
+  }
+
+  a {
+    text-decoration: none;
   }
 
   .headphones {
