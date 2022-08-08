@@ -1,7 +1,9 @@
 @import "../base/utilities";
 
 .services {
-  h3 {
+  background-color: $btn-text-color;
+  padding-bottom: 5rem;
+  h4 {
     text-transform: uppercase;
     color: $headline-text;
     letter-spacing: 2px;
@@ -16,7 +18,10 @@
   }
 
   .cards {
+    background-color: $btn-text-color;
     display: flex;
+    border: 3px solid $border-color;
+    border-radius: 5px;
     .icon {
       background: $logo-color;
       color: #fff;
@@ -37,7 +42,7 @@
       align-items: flex-start;
       text-align: left;
       .line-left-small {
-        border-bottom: 2px solid $subheadline-text;
+        border-bottom: 2px solid $nav-bg-color;
         width: 2rem;
         height: 2px;
         margin: 1rem 0;
@@ -55,8 +60,9 @@
 
     &:hover {
       background: $logo-color;
-      border-radius: 4px;
+      border: none;
       cursor: pointer;
+  
       h6,
       p {
         color: white;

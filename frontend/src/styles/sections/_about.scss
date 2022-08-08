@@ -1,9 +1,11 @@
 @import "../abstracts/mixins/buttons";
 
 .about-section {
-  h3 {
+  background-color: $btn-text-color;
+  
+  h4 {
     text-transform: uppercase;
-    color: #353b46;
+    color: $headline-text;
     letter-spacing: 2px;
   }
   .line-under-left {

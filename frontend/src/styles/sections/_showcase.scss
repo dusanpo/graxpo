@@ -13,6 +13,7 @@
     }
 
     p {
+      font-size: 1.25rem;
       letter-spacing: 5px;
       color: $subheadline-text;
     }
@@ -95,12 +96,15 @@
       top: 27rem;
       right: 14rem;
     }
-    .sunglasses{
+    .sunglasses {
       top: 5rem;
       left: 5rem;
     }
   }
   @media (max-width: 768px) {
+    p {
+      text-align: center;
+    }
     .pen-holder {
       right: 11rem;
     }
