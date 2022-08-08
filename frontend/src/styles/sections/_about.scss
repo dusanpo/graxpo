@@ -1,4 +1,4 @@
- @import "../components/buttons";
+@import "../abstracts/mixins/buttons";
 
 .about-section {
   h3 {
@@ -15,5 +15,10 @@
   }
   .about-button{
     @include regular-button($btn-text-color, $logo-color);
+  }
+  p{
+    color: $subheadline-text;
+    letter-spacing: 0.5px;
+    font-weight: 400;
   }
 }

@@ -1,10 +1,9 @@
 .title-section {
   position: relative;
   background: $nav-bg-color;
-  height: 38rem;
+  height: 37.2rem;
 
   .title-wrap {
-   
     height: 30rem;
     text-transform: uppercase;
 
@@ -23,43 +22,46 @@
     text-decoration: none;
   }
 
-  .headphones {
+  .headphones,
+  .sunglasses,
+  .pencil1,
+  .pencil2,
+  .cork,
+  .glass,
+  .pen-holder,
+  .mouse {
     position: absolute;
+  }
+
+  .headphones {
     top: 1rem;
     left: 0;
   }
   .sunglasses {
-    position: absolute;
-    top: 22rem;
-    left: 22rem;
+    top: 20rem;
+    left: 27rem;
   }
   .pencil1 {
-    position: absolute;
-    top: 34rem;
+    top: 32rem;
     left: 12rem;
   }
   .pencil2 {
-    position: absolute;
-    top: 32rem;
+    top: 30rem;
     left: 10rem;
   }
   .cork {
-    position: absolute;
     top: 7.8rem;
     right: 7.8rem;
   }
   .glass {
-    position: absolute;
     top: 6.8rem;
     right: 7.2rem;
   }
   .pen-holder {
-    position: absolute;
     top: 18rem;
     right: 5rem;
   }
   .mouse {
-    position: absolute;
     top: 25rem;
     right: 18rem;
   }
@@ -78,7 +80,7 @@
 
   @media (max-width: 992px) {
     .headphones {
-      top: 17rem;
+      top: 16rem;
       left: -1rem;
     }
     .cork {
@@ -92,6 +94,10 @@
     .mouse {
       top: 27rem;
       right: 14rem;
+    }
+    .sunglasses{
+      top: 5rem;
+      left: 5rem;
     }
   }
   @media (max-width: 768px) {
