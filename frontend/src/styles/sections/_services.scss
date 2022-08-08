@@ -1,0 +1,73 @@
+@import "../base/utilities";
+
+.services {
+  h3 {
+    text-transform: uppercase;
+    color: $headline-text;
+    letter-spacing: 2px;
+  }
+  .line-under-middle {
+    @extend .middle-under-line;
+  }
+
+  p {
+    color: $subheadline-text;
+    font-weight: 400;
+  }
+
+  .cards {
+    display: flex;
+    .icon {
+      background: $logo-color;
+      color: #fff;
+      border-radius: 50%;
+      width: 5rem;
+      height: 5rem;
+      min-width: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card-content {
+      color: black;
+      margin-left: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      .line-left-small {
+        border-bottom: 2px solid $subheadline-text;
+        width: 2rem;
+        height: 2px;
+        margin: 1rem 0;
+      }
+
+      h6 {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $uderline-color;
+      }
+      .card-text {
+        color: $subheadline-text;
+      }
+    }
+
+    &:hover {
+      background: $logo-color;
+      border-radius: 4px;
+      cursor: pointer;
+      h6,
+      p {
+        color: white;
+      }
+      .line-left-small {
+        border-bottom: 2px solid white;
+      }
+      .icon {
+        background: white;
+        color: $logo-color;
+      }
+    }
+  }
+}
