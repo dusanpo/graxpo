@@ -1,5 +1,7 @@
 .num-section {
-  background: url("../../../../images/numSection.jpg") no-repeat center/cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 
   .content {
     padding: 1rem 0 1rem 5rem;
@@ -11,7 +13,7 @@
     }
     p {
       text-transform: uppercase;
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
     span {
       font-size: 2rem;
