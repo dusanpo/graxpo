@@ -80,16 +80,19 @@
   }
 
   @media (max-width: 992px) {
+    .title-wrap{
+      height: 29rem;
+    }
     .headphones {
       top: 16rem;
       left: -1rem;
     }
     .cork {
-      top: 5rem;
+      top: 4rem;
       right: 7.8rem;
     }
     .glass {
-      top: 5rem;
+      top: 4rem;
       right: 7.2rem;
     }
     .mouse {

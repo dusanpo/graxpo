@@ -1,0 +1,45 @@
+.steps {
+  position: relative;
+  padding-top: 5rem;
+  background-color: $btn-text-color;
+  h4 {
+    text-transform: uppercase;
+    color: $headline-text;
+    letter-spacing: 2px;
+  }
+  .line-under-middle {
+    @extend .middle-under-line;
+  }
+  p {
+    color: $subheadline-text;
+    font-weight: 400;
+  }
+  .img-fluid {
+   position: relative;
+  }
+  .title {
+    text-transform: uppercase;
+    color: $headline-text;
+    font-weight: 600;
+  }
+  .text {
+    width: 80%;
+  }
+  .line-trough {
+    position: absolute;
+    border-bottom: 2px solid $step-line;
+    max-width: 50%;
+    top: 66%;
+    left: 25%;
+
+    @media(max-width: 768px){
+        display: none;
+    }
+  }
+
+ @media(max-width: 768px){
+    .wrapper{
+        margin-bottom: 2rem;
+    }
+ }
+}

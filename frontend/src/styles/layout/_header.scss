@@ -1,6 +1,16 @@
-.navbar {
+
+body{
   background: $nav-bg-color;
-  padding: 40px;
+}
+body::before{
+  display:block;
+  content: "";
+  height: 7rem;
+}
+
+.header {
+  background: $nav-bg-color;
+  padding: 30px 40px 5px 40px;
 
   h3 {
     color: $logo-color;
@@ -11,6 +21,11 @@
     font-size: 13px;
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
+    &:hover{
+     a{
+      color: $logo-color;
+     }
+    }
   }
   .navbar-items{
     margin-right: 6rem;
