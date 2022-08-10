@@ -21,6 +21,11 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script> -->
+
     <link rel="stylesheet" href="./frontend/dist/styles/app.css" />
     <title>Graxpo</title>
   </head>
@@ -245,6 +250,7 @@
     </section>
 
     <section
+      id="section_counter"
       class="p-5 num-section"
       style="background-image: url(images/numSection.jpg)"
     >
@@ -253,7 +259,7 @@
           <div class="col-6 col-md-3">
             <div class="content">
               <i class="fa-regular fa-thumbs-up fa-2x"></i>
-              <span class="ms-2">1580</span>
+              <span class="ms-2 counter" data-target="5345">0</span>
               <p class="pt-3">Project Completed</p>
               <div class="line-under-left"></div>
             </div>
@@ -262,7 +268,7 @@
           <div class="col-6 col-md-3">
             <div class="content">
               <i class="fa-regular fa-heart fa-2x"></i>
-              <span class="ms-2">2850</span>
+              <span class="ms-2 counter" data-target="2850">0</span>
               <p class="pt-3">People Loved</p>
               <div class="line-under-left"></div>
             </div>
@@ -271,7 +277,7 @@
           <div class="col-6 col-md-3">
             <div class="content">
               <i class="fa-regular fa-star fa-2x"></i>
-              <span class="ms-2">1500</span>
+              <span class="ms-2 counter" data-target="1500">0</span>
               <p class="pt-3">Identify Learn</p>
               <div class="line-under-left"></div>
             </div>
@@ -279,7 +285,7 @@
           <div class="col-6 col-md-3">
             <div class="content">
               <i class="fa-solid fa-bullseye fa-2x"></i>
-              <span class="ms-2">1430</span>
+              <span class="ms-2 counter" data-target="1430">0</span>
               <p class="pt-3">Bussines Donor</p>
               <div class="line-under-left"></div>
             </div>
@@ -301,7 +307,12 @@
           <div class="line-trough"></div>
 
           <div class="col-md-4 wrapper">
-            <img src="./images/Step1.png" alt="step1" class="img-fluid icon-image" />
+            <div class="outer">
+              <div class="inner">
+                <i class="fa-solid fa-mobile-screen-button fa-2x"></i>
+              </div>
+            </div>
+
             <p class="pt-4 title">Integer Veneatis</p>
             <p class="m-auto text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
@@ -309,7 +320,11 @@
             </p>
           </div>
           <div class="col-md-4 wrapper">
-            <img src="./images/Step1.png" alt="step1" class="img-fluid icon-image" />
+            <div class="outer">
+              <div class="inner">
+                <i class="fa-solid fa-signal fa-2x"></i>
+              </div>
+            </div>
             <p class="pt-4 title">Moja Loss</p>
             <p class="m-auto text">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
@@ -317,7 +332,11 @@
             </p>
           </div>
           <div class="col-md-4 wrapper">
-            <img src="./images/Step1.png" alt="step1" class="img-fluid icon-image" />
+            <div class="outer">
+              <div class="inner">
+                <i class="fa-solid fa-shuffle fa-2x"></i>
+              </div>
+            </div>
             <p class="pt-4 title">Kew Amare Mairala</p>
             <p class="m-auto text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
@@ -330,7 +349,7 @@
 
     <section class="featured-work">
       <div class="container">
-        <h4 class="text-center pb-2">Our Featured work</h4>
+        <h4 class="text-center pb-2">Our Featured Work</h4>
         <div class="mb-5 line-under-middle"></div>
         <p class="text-center w-50 m-auto mb-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eaque
@@ -344,5 +363,42 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      const sectionCounter = document.querySelector("#section_counter");
+      const counters = document.querySelectorAll(".counter");
+
+      const CounterObserver = new IntersectionObserver(
+        (entries, observer) => {
+          let [entry] = entries;
+          if (!entry.isIntersecting) return;
+
+          const speed = 500;
+          counters.forEach(counter => {
+            const update = () => {
+              const target = +counter.getAttribute("data-target");
+              const count = +counter.innerText;
+
+              const increment = target / speed;
+
+              if (count < target) {
+                counter.innerText = Math.ceil(count + increment);
+                setTimeout(update, 1);
+              } else {
+                counter.innerText = target;
+              }
+            };
+            update();
+          });
+          
+          observer.unobserve(section_counter);
+        },
+        {
+          root: null,
+          treshold: 0.4,
+        }
+      );
+      CounterObserver.observe(section_counter);
+    </script>
   </body>
 </html>
