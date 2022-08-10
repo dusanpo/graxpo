@@ -1,21 +1,11 @@
-@import "../base/utilities";
+//@import "../base/utilities";
+@import "../abstracts/mixins/textContent";
 
 .services {
   background-color: $btn-text-color;
   padding-bottom: 5rem;
-  h4 {
-    text-transform: uppercase;
-    color: $headline-text;
-    letter-spacing: 2px;
-  }
-  .line-under-middle {
-    @extend .middle-under-line;
-  }
-
-  p {
-    color: $subheadline-text;
-    font-weight: 400;
-  }
+  
+  @include repetedText();
 
   .cards {
     background-color: $btn-text-color;
