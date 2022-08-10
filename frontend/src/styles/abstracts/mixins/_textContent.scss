@@ -1,0 +1,16 @@
+@import "../../base/utilities";
+
+@mixin repetedText (){
+    h4 {
+        text-transform: uppercase;
+        color: $headline-text;
+        letter-spacing: 2px;
+      }
+      .line-under-middle {
+        @extend .middle-under-line;
+      }
+      p {
+        color: $subheadline-text;
+        font-weight: 400;
+      }
+}
