@@ -2,5 +2,55 @@
   background: $background-color;
   padding-top: 5rem;
 
-@include repetedText();
+  h4 {
+    text-transform: uppercase;
+    color: $headline-text;
+    letter-spacing: 2px;
+  }
+  .line-under-middle {
+    @extend .middle-under-line;
+  }
+  p {
+    max-width: 35%;
+    color: $subheadline-text;
+    font-weight: 400;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .feature {
+    position: relative;
+    .layer {
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      bottom: 5%;
+      left: 3%;
+      opacity: 0;
+      transition: 0.3s ease;
+      background-color: $logo-color;
+      width: 94%;
+      height: 90%;
+
+      &:hover {
+        opacity: 0.8;
+        border: none;
+      }
+      button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0.5rem 1.5rem;
+        border-radius: 0.7rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        &:hover {
+          color: $logo-color;
+        }
+      }
+    }
+  }
 }

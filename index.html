@@ -21,11 +21,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script> -->
-    <!-- <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script> -->
-
     <link rel="stylesheet" href="./frontend/dist/styles/app.css" />
     <title>Graxpo</title>
   </head>
@@ -348,13 +343,46 @@
     </section>
 
     <section class="featured-work">
-      <div class="container">
+      <div class="container-fluid">
         <h4 class="text-center pb-2">Our Featured Work</h4>
         <div class="mb-5 line-under-middle"></div>
-        <p class="text-center w-50 m-auto mb-5">
+        <p class="text-center m-auto mb-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eaque
           voluptas dolore excepturi nostrum atque tempora et unde odit qui!
         </p>
+
+        <div class="row">
+          <div class="col-md-4 p-0">
+            <div class="feature">
+              <img src="./images/featured3.png" alt="featured3" class="image" />
+              <div class="layer">
+                <button type="button" class="btn btn-outline-light">
+                  View Detail
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-0">
+            <div class="feature">
+              <img src="./images/featured2.png" alt="featured2" class="image" />
+              <div class="layer">
+                <button type="button" class="btn btn-outline-light">
+                  View Detail
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-0">
+            <div class="feature">
+              <img src="./images/featured1.png" alt="featured1" class="image" />
+              <div class="layer">
+                <button type="button" class="btn btn-outline-light">
+                  View Detail
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -390,7 +418,7 @@
             };
             update();
           });
-          
+
           observer.unobserve(section_counter);
         },
         {
