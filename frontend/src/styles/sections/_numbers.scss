@@ -1,10 +1,11 @@
 .num-section {
-  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
+
 
   .content {
-    padding: 1rem 0 1rem 5rem;
+    padding: 2rem 0 2rem 5rem;
 
     color: white;
     .line-under-left {
@@ -20,4 +21,8 @@
     }
    
   }
+  @media(max-width: 768px){
+    background-size: cover;
+}
+  
 }
