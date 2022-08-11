@@ -3,7 +3,7 @@
   padding: 5rem 0;
   background-color: $btn-text-color;
 
-  @include repetedText();
+  @include header-underline-text();
 
   .outer{
     position:relative;
@@ -11,7 +11,7 @@
     top: 0.2rem;
     display: grid;
     place-items: center;
-    background-color: white;
+    background-color: $white-color;
     height: 6.2rem;
     width: 6.2rem;
     border: 1px solid #d1cece;
@@ -32,9 +32,6 @@
     color: $logo-color;
   }
   
-  .icon-image {
-   position: relative;
-  }
   .title {
     text-transform: uppercase;
     color: $headline-text;

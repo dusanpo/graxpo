@@ -1,6 +1,6 @@
 @import "../../base/utilities";
 
-@mixin repetedText (){
+@mixin header-underline-text (){
     h4 {
         text-transform: uppercase;
         color: $headline-text;
