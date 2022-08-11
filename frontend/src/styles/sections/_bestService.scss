@@ -1,0 +1,43 @@
+.our-best-service {
+  background-color: $btn-text-color;
+  padding-top: 5rem;
+  @include header-underline-text();
+}
+
+.best-service {
+  background-color: $logo-color;
+  .text-wrap {
+    width: 60%;
+    margin-left: 10rem;
+
+    h5 {
+      text-transform: uppercase;
+      color: $white-color;
+      letter-spacing: 3px;
+    }
+    .line-under-left {
+      border-bottom: 2px solid $white-color;
+      width: 3rem;
+    }
+    p {
+      color: $white-color;
+    }
+  }
+
+  @media (min-width: 768px) {
+    img {
+      width: 91%;
+    }
+  }
+  @media (max-width: 768px) {
+    img {
+      display: block;
+      margin: auto;
+      order: 1;
+    }
+    .wrapper {
+      order: 2;
+      padding: 1.5rem 0 3rem 0;
+    }
+  }
+}
