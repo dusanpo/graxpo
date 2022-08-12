@@ -1,0 +1,29 @@
+.own-business{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    .content{
+        padding: 7rem 0;
+       color: $business-title;
+       h1{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding-bottom: 1rem;
+        font-weight: 400;
+       }
+       h3{
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-bottom: 2rem;
+        font-weight: 400;
+       }
+       .explore-button{
+        @include regular-button($btn-text-color, $logo-color);
+        border:none;
+       }
+    }
+    @media(max-width: 768px){
+        background-size: cover;
+       
+    }
+}
