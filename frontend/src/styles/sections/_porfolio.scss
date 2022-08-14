@@ -1,0 +1,158 @@
+.portfolio {
+  padding-top: 5rem;
+  background-color: $btn-text-color;
+  @include header-underline-text();
+  .navbar {
+  padding-bottom: 3rem;
+
+    li {
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: $headline-text;
+    }
+    span {
+      padding: 0 3rem;
+    }
+    .space {
+      margin-left: 2rem;
+    }
+    .active {
+      border-bottom: 2px solid $headline-text;
+      width: 2.5rem;
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 29% auto auto;
+    position: relative;
+
+    .item {
+      position: relative;
+
+      .img-fluid {
+        width: 100%;
+        height: 100%;
+      }
+      .on-hover {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        bottom: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+        opacity: 0;
+        background-color: $logo-color;
+        color: #fff;
+        transition: 0.2s ease;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.7;
+          border: none;
+        }
+
+        .content {
+          position: absolute;
+          bottom: 15%;
+          left: 10%;
+
+          h3 {
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            letter-spacing: 4px;
+            font-weight: 600;
+            margin-bottom: 0px;
+          }
+
+          p {
+            text-transform: uppercase;
+            font-size: 1rem;
+            letter-spacing: 1px;
+          }
+          .line {
+            border-bottom: 2px solid #fff;
+            width: 2rem;
+          }
+          @media (max-width: 768px) {
+            h3 {
+              font-size: 0.7rem;
+            }
+            p {
+              font-size: 0.4rem;
+            }
+            .line {
+              border-bottom: 1px solid #fff;
+              width: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+    .item-1 {
+      //badge
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+    .item-2 {
+      //scelet
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+    .item-3 {
+      //yellow
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+    .item-4 {
+      //bottle
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+    .item-5 {
+      //cup and cap
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    .item-7 {
+      //cards
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+    .item-8 {
+      //badges and necklace
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+    .item-9 {
+      //man
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+    .item-10 {
+      //laptop
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+  }
+}
