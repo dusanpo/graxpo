@@ -19,6 +19,7 @@
        }
        .explore-button{
         @include regular-button($btn-text-color, $logo-color);
+        padding: 0.6rem 1rem;
         border:none;
        }
     }
