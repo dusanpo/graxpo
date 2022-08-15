@@ -1,27 +1,61 @@
 .portfolio {
-  padding-top: 5rem;
+  padding-top: 4.5rem;
   background-color: $btn-text-color;
   @include header-underline-text();
-  .navbar {
-  padding-bottom: 3rem;
 
-    li {
-      font-size: 1rem;
-      font-weight: 600;
-      cursor: pointer;
-      color: $headline-text;
+  .wrapper {
+    .list {
+      margin-top: 10px;
+      padding-bottom: 1rem;
+      li {
+        list-style: none;
+        padding: 5px 20px;
+        margin: 0 10px;
+        cursor: pointer;
+        font-size: 1.1rem;
+        color: #505050;
+        font-weight: 600;
+      }
+      li.active {
+        position: relative;
+      }
+      li.active:after {
+        content: "";
+        position: absolute;
+        width: 25%;
+        display: block;
+        height: 2px;
+        background-color: $uderline-color;
+        margin-top: 10px;
+      }
+      span{
+        margin-top: 6px;
+        color:#505050;
+        font-size: 1rem;
+        font-weight: 600;
+      }
     }
-    span {
-      padding: 0 3rem;
-    }
-    .space {
-      margin-left: 2rem;
-    }
-    .active {
-      border-bottom: 2px solid $headline-text;
-      width: 2.5rem;
-    }
+    
   }
+  @media(max-width: 768px){
+    .wrapper{
+      .list{
+       padding: 5px 10px;
+       font-size: 0.8rem;
+      }
+    }
+   }
+   @media(max-width: 600px){
+    .wrapper{
+      .list{
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+      }
+    }
+   }
+
+
 
   .grid {
     display: grid;
@@ -45,7 +79,7 @@
         height: 90%;
         opacity: 0;
         background-color: $logo-color;
-        color: #fff;
+        color: $white-color;
         transition: 0.2s ease;
         cursor: pointer;
 
@@ -73,7 +107,7 @@
             letter-spacing: 1px;
           }
           .line {
-            border-bottom: 2px solid #fff;
+            border-bottom: 2px solid $white-color;
             width: 2rem;
           }
           @media (max-width: 768px) {
