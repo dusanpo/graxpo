@@ -1,0 +1,67 @@
+.crew {
+  padding-top: 4rem;
+  background-color: $btn-text-color;
+  @include header-underline-text();
+ 
+  .img-wrapper {
+    position: relative;
+
+    .img {
+      width: 100%;
+    }
+
+    .layer {
+      position: absolute;
+      right: 5%;
+      bottom: 5%;
+      left: 5%;
+      width: 90%;
+      height: 43%;
+      font-size: 11px;
+      opacity: 0;
+      background-color: $logo-color;
+      transition: 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+      .job-description{
+        color: $step-line;
+        letter-spacing: 1px;
+         margin-top: 2.5rem;
+         margin-bottom: 1.7rem;
+      }
+
+      i {
+        border: 1px solid $white-color;
+        color: $white-color;
+        border-radius: 50%;
+        height: 29px;
+        width: 29px;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+      }
+    }
+  }
+
+  .name {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $headline-text;
+    font-weight: 600;
+    margin-top: 1.6rem;
+  }
+
+  .position {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #585c5f;
+    font-weight: 600;
+    padding-bottom: 5rem;
+  }
+}
