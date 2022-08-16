@@ -4,11 +4,55 @@
   @include header-underline-text();
 
 
+
+.card-content{
+  margin: 2rem;
+  
+
+
+.list-group-item{
+  background-color: $btn-text-color;
+}
+
+&:hover{
+  box-shadow: 1px 0px 33px 4px rgba(128,112,112,0.79);
+  -webkit-box-shadow: 1px 0px 33px 4px rgba(128,112,112,0.79);
+  -moz-box-shadow: 1px 0px 33px 4px rgba(128,112,112,0.79);
+}
+
+.header-text{
+  text-transform: uppercase;
+  font-weight:500;
+  font-size: 1.3rem;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+  color: #84858e;
+}
+.main-text{
+  color: #84858e;
+  
+}
+.main-text1{
+  color: #84858e;
+  font-weight: 600;
+  font-size: 20px;
+}
+
   button{
+    border: 1px solid #dfdfdf;
+    margin: 1.5rem 0;
+    width: 9rem;
+    text-transform: uppercase;
     &:hover{
         background-color: $logo-color;
         color: $white-color;
         border: none;
+        li{
+          background-color: $white-color;
+        }
     }
   }
+}
+
 }
