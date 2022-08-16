@@ -1,0 +1,46 @@
+.subscribe {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  color: #f5ece7;
+  padding: 6.5rem 0;
+
+  .left-content {
+    .title {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 500;
+    }
+    .line-under {
+      border: 1px solid #f5ece7;
+      width: 5rem;
+      margin: 1.5rem 0;
+    }
+  }
+  .right-content {
+    margin-top: 3rem;
+    margin-left: 5rem;
+    button {
+      text-transform: uppercase;
+      padding: 0.7rem 2.5rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      background: transparent;
+      letter-spacing: 1px;
+      cursor: pointer;
+      color: #f5ece7;
+    }
+    input {
+      border-radius: 0px;
+      font-size: 12px;
+      color: #f5ece7;
+      background: transparent;
+      &::placeholder {
+        color: #f5ece7;
+        padding-left: 1rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}

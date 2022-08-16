@@ -1,0 +1,14 @@
+.pricing-table {
+  padding-top: 4rem;
+  background-color: $btn-text-color;
+  @include header-underline-text();
+
+
+  button{
+    &:hover{
+        background-color: $logo-color;
+        color: $white-color;
+        border: none;
+    }
+  }
+}
