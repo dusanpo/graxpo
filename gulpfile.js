@@ -13,9 +13,22 @@ function styles() {
     .pipe(dest("./frontend/dist/styles/"));
 }
 
-//watchTask
-function watchTask() {
-  watch("./frontend/src/styles/**/*.scss", series(styles));
+//scripts
+const jsMinify = require("gulp-terser");
+
+function scripts() {
+  return src("./frontend/src/scripts/**/*.js")
+    .pipe(jsMinify())
+    .pipe(dest("./frontend/dist/scripts/"));
 }
 
-exports.default = series(styles, watchTask);
+//watchTask
+
+function watchTask() {
+  watch(
+    ["./frontend/src/styles/**/*.scss", "./frontend/src/scripts/**/*.js"],
+    series(styles, scripts)
+  );
+}
+
+exports.default = series(styles, scripts, watchTask);
