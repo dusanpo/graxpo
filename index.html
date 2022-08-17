@@ -129,7 +129,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md p-5">
-            <h4 class="pb-2">About Graxpo</h4>
+            <h4 class="pb-3">About Graxpo</h4>
             <div class="line-under-left"></div>
             <p class="my-4 pb-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
@@ -155,8 +155,8 @@
 
     <section id="service" class="services">
       <div class="container">
-        <h4 class="text-center pb-2">What We Do</h4>
-        <div class="mb-5 line-under-middle"></div>
+        <h4 class="text-center pb-3">What We Do</h4>
+        <div class="line-under-middle"></div>
         <p class="text-center w-50 m-auto mb-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eaque
           voluptas dolore excepturi nostrum atque tempora et unde odit qui!
@@ -245,7 +245,7 @@
     </section>
 
     <section
-      id="section_counter"
+      id="sectionCounter"
       class="p-5 num-section"
       style="background-image: url(images/numSection.jpg)"
     >
@@ -291,7 +291,7 @@
 
     <section class="text-center steps">
       <div class="container">
-        <h4 class="pb-2">Three simple steps</h4>
+        <h4 class="pb-3">Three simple steps</h4>
         <div class="mb-5 line-under-middle"></div>
         <p class="w-50 m-auto mb-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eaque
@@ -493,7 +493,7 @@
       <div class="container">
         <div class="row">
           <div class="col text-center pt-5">
-            <h4 class="pb-2">Portfolio</h4>
+            <h4 class="pb-3">Portfolio</h4>
             <div class="mb-5 line-under-middle"></div>
             <p class="w-50 m-auto mb-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
@@ -504,25 +504,25 @@
         </div>
       </div>
 
-      <div class="wrapper mb-5">
+      <div class="list-wrapper mb-5">
         <ul class="d-flex justify-content-center list">
-          <li class="active">All Categories</li>
+          <li class="list-item active" data-filter="all">All Categories</li>
           <span>/</span>
-          <li>Print</li>
+          <li class="list-item" data-filter="print">Print</li>
           <span>/</span>
-          <li>Identity</li>
+          <li class="list-item" data-filter="identity">Identity</li>
           <span>/</span>
-          <li>Branding</li>
+          <li class="list-item" data-filter="branding">Branding</li>
           <span>/</span>
-          <li>Web</li>
+          <li class="list-item" data-filter="web">Web</li>
         </ul>
       </div>
 
-      <div class="grid">
-        <div class="item item-1" data-filter="branding">
+      <div class="content">
+        <div class="item branding">
           <img src="./images/p-img1.png" class="img-fluid img" />
           <div class="on-hover">
-            <div class="content">
+            <div class="text-wrapper">
               <h3>The Winter Tal's</h3>
               <p>Raf Redwan</p>
               <div class="line"></div>
@@ -530,10 +530,10 @@
           </div>
         </div>
 
-        <div class="item item-2" data-filter="identity">
+        <div class="item identity">
           <img src="./images/p-img3.png" class="img-fluid img" />
           <div class="on-hover">
-            <div class="content">
+            <div class="text-wrapper">
               <h3>The Winter Tal's</h3>
               <p>Raf Redwan</p>
               <div class="line"></div>
@@ -541,10 +541,10 @@
           </div>
         </div>
 
-        <div class="item item-3" data-filter="print">
+        <div class="item print">
           <img src="./images/p-img5.png" class="img-fluid img" />
           <div class="on-hover">
-            <div class="content">
+            <div class="text-wrapper">
               <h3>The Winter Tal's</h3>
               <p>Raf Redwan</p>
               <div class="line"></div>
@@ -552,10 +552,10 @@
           </div>
         </div>
 
-        <div class="item item-4" data-filter="branding">
+        <div class="item branding">
           <img src="./images/p-img2.png" class="img-fluid img" />
           <div class="on-hover">
-            <div class="content">
+            <div class="text-wrapper">
               <h3>The Winter Tal's</h3>
               <p>Raf Redwan</p>
               <div class="line"></div>
@@ -563,21 +563,21 @@
           </div>
         </div>
 
-        <div class="item item-5 d-flex">
-          <div class="item w-50" data-filter="identity">
+        <div class="item d-flex">
+          <div class="item w-50 identity">
             <img src="./images/p-img6.png" class="img-fluid img" />
             <div class="on-hover">
-              <div class="content">
+              <div class="text-wrapper">
                 <h3>The Winter Tal's</h3>
                 <p>Raf Redwan</p>
                 <div class="line"></div>
               </div>
             </div>
           </div>
-          <div class="item w-50" data-filter="identity">
+          <div class="item w-50 identity">
             <img src="./images/p-img7.png" class="img-fluid img" />
             <div class="on-hover">
-              <div class="content">
+              <div class="text-wrapper">
                 <h3>The Winter Tal's</h3>
                 <p>Raf Redwan</p>
                 <div class="line"></div>
@@ -586,10 +586,10 @@
           </div>
         </div>
 
-        <div class="item item-6" data-filter="print">
+        <div class="item print">
           <img src="./images/p-img4.png" class="img-fluid img" />
           <div class="on-hover">
-            <div class="content">
+            <div class="text-wrapper">
               <h3>The Winter Tal's</h3>
               <p>Raf Redwan</p>
               <div class="line"></div>
@@ -597,10 +597,10 @@
           </div>
         </div>
 
-        <div class="item item-7" data-filter="food">
+        <div class="item web">
           <img id="cont" src="./images/p-img8.png" class="img-fluid img" />
           <div class="on-hover">
-            <div class="content">
+            <div class="text-wrapper">
               <h3>The Winter Tal's</h3>
               <p>Raf Redwan</p>
               <div class="line"></div>
@@ -608,21 +608,21 @@
           </div>
         </div>
 
-        <div class="item item-8 d-flex flex-column">
-          <div class="item h-50" data-filter="branding">
+        <div class="item d-flex flex-column">
+          <div class="item h-50 branding">
             <img src="./images/p-img9.png" class="img-fluid img" />
             <div class="on-hover">
-              <div class="content">
+              <div class="text-wrapper">
                 <h3>The Winter Tal's</h3>
                 <p>Raf Redwan</p>
                 <div class="line"></div>
               </div>
             </div>
           </div>
-          <div class="item h-50" data-filter="branding">
+          <div class="item h-50 branding">
             <img src="./images/p-img10.png" class="img-fluid img" />
             <div class="on-hover">
-              <div class="content">
+              <div class="text-wrapper">
                 <h3>The Winter Tal's</h3>
                 <p>Raf Redwan</p>
                 <div class="line"></div>
@@ -631,10 +631,10 @@
           </div>
         </div>
 
-        <div class="item item-9" data-filter="identity">
+        <div class="item identity">
           <img src="./images/p-img11.png" class="img-fluid img" />
           <div class="on-hover">
-            <div class="content">
+            <div class="text-wrapper">
               <h3>The Winter Tal's</h3>
               <p>Raf Redwan</p>
               <div class="line"></div>
@@ -642,10 +642,10 @@
           </div>
         </div>
 
-        <div class="item item-10" data-filter="web">
+        <div class="item web">
           <img src="./images/p-img12.png" class="img-fluid img" />
           <div class="on-hover">
-            <div class="content">
+            <div class="text-wrapper">
               <h3>The Winter Tal's</h3>
               <p>Raf Redwan</p>
               <div class="line"></div>
@@ -654,6 +654,8 @@
         </div>
       </div>
     </section>
+
+
 
 
 
@@ -698,8 +700,6 @@
         </p>
       </div>
     </div>
-  
-
   <div class="row mt-5">
     <div class="col-lg-3 col-md-6 text-center">
       <div class="img-wrapper">
@@ -994,7 +994,7 @@
               <div class="form-group">
                 <button
                   type="submit"
-                  class="btn btn-block"
+                  class="btn"
                 >
                   Submit Now
                 </button>
@@ -1040,6 +1040,12 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
   ></script>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"
+></script>
 
   <script src="./frontend/dist/scripts/app.js"></script>
     

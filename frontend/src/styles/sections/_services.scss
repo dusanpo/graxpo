@@ -6,6 +6,9 @@
   padding-bottom: 5rem;
   
   @include header-underline-text();
+  .line-under-middle{
+    margin-bottom: 2.4rem;
+  }
 
   .cards {
     background-color: $btn-text-color;

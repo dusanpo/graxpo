@@ -1,7 +1,6 @@
-const sectionCounter = document.querySelector("#section_counter");
+const sectionCounter = document.querySelector("#sectionCounter");
 const counters = document.querySelectorAll(".counter");
-const liItem = document.querySelectorAll(".list li");
-const imgItem = document.querySelectorAll(".item");
+
 
 const CounterObserver = new IntersectionObserver(
   (entries, observer) => {
@@ -26,31 +25,33 @@ const CounterObserver = new IntersectionObserver(
       update();
     });
 
-    observer.unobserve(section_counter);
+    observer.unobserve(sectionCounter);
   },
   {
     root: null,
     threshold: 0.4,
   }
 );
-CounterObserver.observe(section_counter);
+CounterObserver.observe(sectionCounter);
 
-liItem.forEach(li => {
-  li.onclick = function () {
-    liItem.forEach(li => {
-      li.className = "";
-    });
-    li.className = "active";
+$(document).ready(function () {
+  $(".list-item").click(function () {
+    const value = $(this).attr("data-filter");
+    if (value === "all") {
+      $(".item").show("1000");
+    } else {
+      $(".item")
+        .not("." + value)
+        .hide("1000");
+      $(".item")
+        .filter("." + value)
+        .show("1000");
+    }
+  });
+  // add active class on selective
 
-    const value = li.textContent;
-    imgItem.forEach(img => {
-      img.style.display = "none";
-      if (
-        img.getAttribute("data-filter") === value.toLowerCase() ||
-        value === "All Categories"
-      ) {
-        img.style.display = "block";
-      }
-    });
-  };
+  $(".list-item").click(function () {
+    $(this).addClass("active").siblings().removeClass("active");
+    //removeClass('class1 class2');
+  });
 });
