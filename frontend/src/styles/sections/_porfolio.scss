@@ -102,9 +102,10 @@
             text-transform: uppercase;
             font-size: 1rem;
             letter-spacing: 1px;
+            color: $white-color;
           }
           .line {
-            border-bottom: 2px solid $white-color;
+            border-bottom: 2px solid #d09b99;
             width: 2rem;
           }
           @media (max-width: 768px) {

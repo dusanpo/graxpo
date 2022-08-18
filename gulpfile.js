@@ -1,6 +1,6 @@
 const { src, dest, series, watch } = require("gulp");
 
-//styles
+
 const scss = require("gulp-sass")(require("sass"));
 const autoPrefixer = require("gulp-autoprefixer");
 const cssMinify = require("gulp-clean-css");
@@ -13,7 +13,7 @@ function styles() {
     .pipe(dest("./frontend/dist/styles/"));
 }
 
-//scripts
+
 const jsMinify = require("gulp-terser");
 
 function scripts() {
@@ -22,7 +22,7 @@ function scripts() {
     .pipe(dest("./frontend/dist/scripts/"));
 }
 
-//watchTask
+
 
 function watchTask() {
   watch(
