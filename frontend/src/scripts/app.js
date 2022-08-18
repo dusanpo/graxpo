@@ -1,7 +1,6 @@
 const sectionCounter = document.querySelector("#sectionCounter");
 const counters = document.querySelectorAll(".counter");
 
-
 const CounterObserver = new IntersectionObserver(
   (entries, observer) => {
     let [entry] = entries;
@@ -48,10 +47,9 @@ $(document).ready(function () {
         .show("1000");
     }
   });
-  // add active class on selective
 
   $(".list-item").click(function () {
     $(this).addClass("active").siblings().removeClass("active");
-    //removeClass('class1 class2');
+    
   });
 });
